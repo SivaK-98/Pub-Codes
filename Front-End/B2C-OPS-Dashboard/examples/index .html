@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPS DASH BOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+    <div class="side-bar">
+      <div class="close-btn">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="menu">
+        <div class="item">
+        <a class="sub-btn"><i class="fas fa-server"></i>SERVER Details<i class="fas fa-angle-right dropdown"></i></a>
+        
+        <div class="sub-menu">
+            <div class="item">
+            <a href="PROD_Servers.html"><i class="fas fa-server"></i>PRODUCTION</a>
+            </div>
+            
+            <div class="item">
+            <a class="sub-btn"><i class="fas fa-server"></i>ENV<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+               <a href="DEV_Servers.html" class="sub-item">DEV</a>
+               <a href="UAT_Servers.html" class="sub-item">UAT</a>
+               <a href="PERF_Servers.html" class="sub-item">PERF</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+       
+     
+        <div class="item">
+        <a class="sub-btn"><i class="fas fa-server"></i>DB Details<i class="fas fa-angle-right dropdown"></i></a>
+        
+        <div class="sub-menu">
+            <div class="item">
+            <a href="PROD_DB.html" class="sub-btn"><i class="fas fa-server"></i>PRODUCTION</a>
+            
+            </div>
+            
+            <div class="item">
+            <a class="sub-btn"><i class="fas fa-server"></i>ENV<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+               <a href="DEV_DB.html" class="sub-item">DEV</a>
+               <a href="UAT_DB.html" class="sub-item">UAT</a>
+               <a href="PERF_DB.html" class="sub-item">PERF</a>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+        <div class="item">
+        <a class="sub-btn"><i class="fas fa-server"></i>CONSOLES<i class="fas fa-angle-right dropdown"></i></a>
+        
+        <div class="sub-menu">
+            <div class="item">
+            <a class="sub-btn"><i class="fas fa-server"></i>PRODUCTION<i class="fas fa-angle-right dropdown"></i></a>
+            <div class="sub-menu">
+                <a href="PROD_Consoles.html" class="sub-item">PROD</a>
+                <a href="DR_Consoles.html" class="sub-item">DR</a>
+                </div>
+            </div>
+            
+            <div class="item">
+            <a class="sub-btn"><i class="fas fa-server"></i>ENV<i class="fas fa-angle-right dropdown"></i></a>
+                <div class="sub-menu">
+               <a href="DEV1_Consoles.html" class="sub-item">DEV 1</a>
+               <a href="DEV2_Consoles.html" class="sub-item">DEV 2</a>
+	       <a href="DEV3_Consoles.html" class="sub-item">DEV 3</a>
+               <a href="UAT1_Consoles.html" class="sub-item">UAT 1</a>
+               <a href="UAT2_Consoles.html" class="sub-item">UAT 2</a>
+               <a href="UAT3_Consoles.html" class="sub-item">UAT 3</a>
+               <a href="PERF_Consoles.html" class="sub-item">PERF</a>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        
+          <div class="item"><a href="Cache_Monitor.html"><i class="fab fa-watchman-monitoring"></i>CACHE MONITOR</a></div>
+         <div class="item"><a href="PROD_Monitors.html"><i class="fab fa-watchman-monitoring"></i>Monitoring Tools</a></div>
+	 <div class="item"><a href="SolrCore.html"><i class="fas fa-microchip"></i>SOLR CORE</a></div>
+	 <div class="item"><a href="Tools.html"><i class="fas fa-tools"></i>TOOLS</a></div>
+            <div class="item"><a href="AGDetails.html"><i class="fas fa-id-card"></i>AG DETAILS</a></div>
+        <div class="item"><a href="Store.html"><i class="fas fa-shopping-cart"></i>STORE</a></div>
+      </div>
+    </div>
+    <section class="main">
+        <h1>ETR B2C OPS SUPPORT<br>DASHBOARD<br></h1>
+
+
+    </section>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+      //jquery for toggle sub menus
+      $('.sub-btn').click(function(){
+        $(this).next('.sub-menu').slideToggle();
+        $(this).find('.dropdown').toggleClass('rotate');
+      });
+
+      //jquery for expand and collapse the sidebar
+      $('.menu-btn').click(function(){
+        $('.side-bar').addClass('active');
+        $('.menu-btn').css("visibility", "hidden");
+      });
+
+      $('.close-btn').click(function(){
+        $('.side-bar').removeClass('active');
+        $('.menu-btn').css("visibility", "visible");
+      });
+    });
+    </script>
+
+  </body>
+</html>

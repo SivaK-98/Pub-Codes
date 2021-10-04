@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>CONSOLES</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   <link rel="stylesheet" href="consoles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index%20.html">HOME</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Prod_DB.html">DB DETAILS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PROD_Servers.html">PROD SERVER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DR_Server.html">DR SERVER</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">SI.NO</th>
+      <th scope="col">ENV</th>
+      <th scope="col">AUTH/LIVE</th>
+      <th scope="col">URL</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i> WCS LIVE</td>
+      <td><a href="https://org-prodlive-us.hpcloud.hp.com/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon" class="btn btn-success custom" role="button">ORG ADMIN</a></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i> WCS LIVE</td>
+      <td><a href="https://accelerator-prodlive-us.hpcloud.hp.com/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" class="btn btn-success custom" role="button">ACCELARATOR</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i>PROD</td>
+      <td><a href="https://admin-prodlive-us.hpcloud.hp.com/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" class="btn btn-success custom" role="button">ADMIN CONSOLE</a></td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i> WCS LIVE</td>
+      <td><a href="https://cmc-prodlive-us.hpcloud.hp.com/lobtools/cmc/ManagementCenter" class="btn btn-success custom" role="button">MC</a></td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i> WCS AUTH</td>
+      <td><a href="https://internal-prodauth-ts-app-lb-1208329223.us-east-1.elb.amazonaws.com:9043/ibm/console/" class="btn btn-success custom" role="button">IBM</a></td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>PROD</td>
+      <td><i class="fas fa-desktop"></i> WCS AUTH</td>
+      <td><a href="https://org.prodauth-us.corp.hpicloud.net/webapp/wcs/orgadmin/servlet/ToolsLogon?XMLFile=buyerconsole.BuyAdminConsoleLogon" class="btn btn-success custom" role="button">ORG ADMIN</a></td>
+    </tr>
+    <tr>
+        <th scope="row">7</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> WCS AUTH</td>
+        <td><a href="https://accelerator-prodauth-us.corp.hpicloud.net/webapp/wcs/tools/servlet/ToolsLogon?XMLFile=common.mcLogon" class="btn btn-success custom" role="button">ACCELERATOR</a></td>
+    </tr>
+    <tr>
+        <th scope="row">8</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> WCS AUTH</td>
+        <td><a href="https://admin-prodauth-us.corp.hpicloud.net/webapp/wcs/admin/servlet/ToolsLogon?XMLFile=adminconsole.AdminConsoleLogon" class="btn btn-success custom" role="button">ADMIN CONSOLE</a></td>
+    </tr>
+     <tr>
+        <th scope="row">9</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> CTO AUTH</td>
+        <td><a href="https://etr-prd-auth-cto-app1.corp.hpicloud.net:9043/ibm/console/logon.jsp" class="btn btn-success custom" role="button">IBM CONSOLE</a></td>
+    </tr>
+     <tr>
+        <th scope="row">10</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> CTO AUTH</td>
+        <td><a href="http://etr-prd-auth-cto-app1.corp.hpicloud.net:9080/smcfs/console/login.jsp" class="btn btn-success custom" role="button">SMCFS CONSOLE</a></td>
+    </tr>
+    <tr>
+        <th scope="row">11</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> CTO LIVE</td>
+        <td><a href="https://etr-prd-live-cto-app1.corp.hpicloud.net:9043/ibm/console/logon.jsp" class="btn btn-success custom" role="button">IBM CONSOLE</a></td>
+    </tr>
+     <tr>
+        <th scope="row">12</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> CTO LIVE</td>
+        <td><a href="http://etr-prd-live-cto-weblb.corp.hpicloud.net:9080/smcfs/console/login.jsp" class="btn btn-success custom" role="button">SMCFS CONSOLE</a></td>
+    </tr>
+    <tr>
+        <th scope="row">13</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> VIM AUTH</td>
+        <td><a href="https://etr-prd-auth-vim-app1.corp.hpicloud.net:9043/ibm/console/logon.jsp" class="btn btn-success custom" role="button">IBM CONSOLE</a></td>
+    </tr>
+    <tr>
+        <th scope="row">14</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> VIM AUTH</td>
+        <td><a href="https://etr-prd-auth-vim-app1.corp.hpicloud.net:9043/ibm/console/logon.jsp" class="btn btn-success custom" role="button">VIM STORE</a></td>
+    </tr><tr>
+        <th scope="row">15</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> OMS LIVE</td>
+        <td><a href="https://g8t00397s.inc.hpicorp.net:9043/ibm/console" class="btn btn-success custom" role="button">IBM CONSOLE</a></td>
+    </tr>
+    <tr>
+        <th scope="row">16</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> OMS LIVE</td>
+        <td><a href="http://glbecomtran-sterling-plano.inc.hpicorp.net/smcfs/console/login.jsp" class="btn btn-success custom" role="button">STERLING</a></td>
+    </tr>
+    <tr>
+        <th scope="row">17</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> OMS LIVE</td>
+        <td><a href="http://g8t00403s.inc.hpicorp.net:9080/smcfs/console/login.jsp" class="btn btn-success custom" role="button">SMCFS</a></td>
+    </tr>
+     <tr>
+        <th scope="row">18</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> PIN POINT</td>
+        <td><a href="https://g8t02745a.inc.hpicorp.net:9063/PinPoint/" class="btn btn-success custom" role="button">PIN POINT</a></td>
+    </tr>
+    <tr>
+        <th scope="row">19</th>
+        <td>PROD</td>
+        <td><i class="fas fa-desktop"></i> Jenkins </td>
+        <td><a href="http://172.22.18.118:8080/jenkins/" class="btn btn-success custom" role="button">PROD JENKINS</a></td>
+    </tr>
+    
+    <tr>
+        <th scope="row">20</th>
+        <td>PROD</td>
+        <td><i class="fas fa-lock"></i> Vault </td>
+        <td><a href="https://etr-prd-vault.corp.hpicloud.net/ui/vault/auth?with=token" class="btn btn-success custom" role="button">VAULT</a></td>
+    </tr>
+  </tbody>
+  
+
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
+

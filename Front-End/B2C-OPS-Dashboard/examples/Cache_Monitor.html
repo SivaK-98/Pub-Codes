@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+    <meta name="author" content="Creative Tim">
+    <title>PROD CONSOLES</title>
+    <link rel="stylesheet" href="consoles.css">
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <!-- Icons -->
+    <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+    <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+    <!-- Argon CSS -->
+    <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="index%20.html">HOME</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="PROD_Servers.html">PROD SERVER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PROD_DB.html">PROD DB</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="PROD_Consoles.html">PROD CONSOLES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="DR_Console.html">DR CONSOLES</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <h6 class="h2 text-white d-inline-block mb-0">CACHE MONITOR</h6>
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+        <div class="row">
+            <div class="col">
+                <div class="card bg-default shadow">
+                    <div class="card-header bg-transparent border-0">
+                        <h3 class="text-white mb-0">PROD </h3>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-dark table-flush">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="name">COMPONENT</th>
+                                    <th scope="col" class="sort" data-sort="budget">URL</th>
+                                    <th scope="col" class="sort" data-sort="name">COMPONENT</th>
+                                    <th scope="col" class="sort" data-sort="budget">URL</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="list">
+                                <tr>
+
+                                    <td><i class="fas fa-desktop"></i> WCS</td>
+                                    <td><a href="https://internal-prodlive-ts-app-lb-1037029843.us-east-1.elb.amazonaws.com:5443/cachemonitor/" class="btn btn-success custom" role="button">LIVE 1</a></td>
+                                    <td><i class="fas fa-desktop"></i> WCS</td>
+                                    <td><a href="https://internal-prodlive-ts-app-lb-1037029843.us-east-1.elb.amazonaws.com:9043/ibm/console/" class="btn btn-success custom" role="button">LIVE 2</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-desktop"></i> WCS</td>
+                                    <td><a href="https://internal-prodauth-ts-app-lb-1208329223.us-east-1.elb.amazonaws.com:5443/cachemonitor/" class="btn btn-success custom" role="button">AUTH 1</a></td>
+                                    <td><i class="fas fa-desktop"></i> WCS</td>
+                                    <td><a href="https://internal-prodauth-ts-app-lb-1208329223.us-east-1.elb.amazonaws.com:9043/ibm/console/" class="btn btn-success custom" role="button">AUTH 2</a></td>
+                                </tr>
+				<tr>
+                                    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-auth-cto-app1.corp.hpicloud.net:9443/cachemonitor/" class="btn btn-success custom" role="button">AUTH 1</a></td>
+                                    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-auth-cto-app2.corp.hpicloud.net:9443/cachemonitor/" class="btn btn-success custom" role="button">AUTH 2</a></td>
+
+                                </tr>
+
+
+                                <tr>
+                                    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-live-cto-app1.corp.hpicloud.net:9443/cachemonitor/" class="btn btn-success custom" role="button">LIVE 1</a></td>
+                                    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-live-cto-app1.corp.hpicloud.net:9444/cachemonitor/" class="btn btn-success custom" role="button">LIVE 2</a></td>
+
+                                </tr>
+
+                                <tr>
+                                    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-live-cto-app2.corp.hpicloud.net:9443/cachemonitor/" class="btn btn-success custom" role="button">LIVE 3</a></td>
+				    <td><i class="fas fa-desktop"></i> CTO</td>
+                                    <td><a href="https://etr-prd-live-cto-app2.corp.hpicloud.net:9444/cachemonitor/" class="btn btn-success custom" role="button">LIVE 4</a></td>
+                                </tr>
+<tr>
+                                    <td><i class="fas fa-desktop"></i> REDIS</td>
+                                    <td><a href="https://cache-prodauth-us.corp.hpicloud.net/openapi/ui/#/default/clear" class="btn btn-success custom" role="button">AUTH</a></td>
+                                    <td><i class="fas fa-desktop"></i> REDIS</td>
+                                    <td><a href="https://cache-prodlive-us.hpcloud.hp.com/openapi/ui/#/default/clearAll" class="btn btn-success custom" role="button">LIVE</a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Card footer -->
+                    <div class="card-footer py-4 bg-default shadow">
+                        <nav aria-label="...">
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header border-0">
+                        <h3 class="mb-0">DR</h3>
+                    </div>
+                    <!-- Light table -->
+                    <div class="table-responsive">
+                        <table class="table align-items-center table-flush">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col" class="sort" data-sort="name">COMPONENT</th>
+                                    <th scope="col" class="sort" data-sort="budget">URL</th>
+                                    <th scope="col" class="sort" data-sort="name">COMPONENT</th>
+                                    <th scope="col" class="sort" data-sort="budget">URL</th>
+
+                                </tr>
+                            </thead>
+                            <tbody class="list">
+                                <tr>
+                                    <td><i class="fas fa-desktop"></i> AUTH</td>
+                                    <td><a href="#" class="btn btn-success custom" role="button">#</a></td>
+                                    <td><i class="fas fa-desktop"></i> AUTH</td>
+                                    <td><a href="$" class="btn btn-success custom" role="button">#</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fas fa-desktop"></i> LIVE</td>
+                                    <td><a href="#" class="btn btn-success custom" role="button">#</a></td>
+                                    <td><i class="fas fa-desktop"></i> LIVE</td>
+                                    <td><a href="#" class="btn btn-success custom" role="button">#</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Card footer -->
+                    <div class="card-footer py-4">
+                        <nav aria-label="...">
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Argon Scripts -->
+    <!-- Core -->
+    <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+    <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+    <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+    <!-- Argon JS -->
+    <script src="../assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>

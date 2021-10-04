@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>MONITORING TOOLS</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+  <style>
+.custom {
+    width: 300px !important;
+}
+
+
+.table td {
+   text-align: center;   
+}
+
+.table tr {
+   text-align: center;   
+}    
+</style>
+</head>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index%20.html">HOME</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Prod_DB.html">DB DETAILS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PROD_Servers.html">PROD SERVER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DR_Consoles.html">DR CONSOLES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PROD_Consoles.html">PROD CONSOLES</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+  
+  
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">MONITORING TOOLS</h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+
+      <div class="row">
+        <div class="col">
+          <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="text-white mb-0">PROD</h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center table-dark table-flush">
+                <thead>
+    <tr>
+      <th scope="col">TOOL</th>
+      <th scope="col">TOOL</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+    <td><a href="https://172.22.19.146:8000/en-GB/account/login" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> SPLUNK </a></td>
+      <td><a href="https://login.newrelic.com/login" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> NEW RELIC </a></td>
+
+    </tr>
+    
+    <tr>
+      <td><a href="http://internal-a2b0a8fdf2cd64b229b84bab126b5bfa-350521264.us-east-1.elb.amazonaws.com/login" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> GRAFANA </a></td>
+      <td><a href="http://internal-ab9da2fe8d1c34343bb0af6d549e5885-1752355278.us-east-1.elb.amazonaws.com:9090/" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> PROMETHEUS </a></td>
+    </tr>
+    <tr>
+      <td><a href="https://g8t06534a.inc.hpicorp.net:8182/healthv9" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> KABALI </a></td>
+      <td><a href="https://internal-a0cb931a327c1425a9de3e7f3c3c34e1-896514005.us-east-1.elb.amazonaws.com/" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> KUBERNETES </a></td>
+    </tr>
+                </tbody>
+              </table>
+
+        </div>
+         <!-- Card footer -->
+            <div class="card-footer py-4 bg-default shadow">
+              <nav aria-label="...">
+                
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Card header -->
+            <div class="card-header border-0">
+              <h3 class="mb-0">PERF</h3>
+            </div>
+            <!-- Light table -->
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead>
+                  <tr>
+                    <th scope="col" class="sort" data-sort="name">TOOL</th>
+                    <th scope="col" class="sort" data-sort="name">TOOL</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                    <tr>
+
+                     <td><a href="http://internal-abfa49adcf5aa48f6bf955f992039f89-18628234.us-east-1.elb.amazonaws.com:9090/" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> PROMETHEUS</a></td>
+                     <td><a href="http://internal-a11d8b618ed064a89b9390198d2716c6-409148946.us-east-1.elb.amazonaws.com/login" class="btn btn-success custom" role="button"><i class="fas fa-desktop"></i> GRAFANA</a></td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+              </div>
+            <!-- Card footer -->
+            <div class="card-footer py-4">
+              <nav aria-label="...">
+
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>

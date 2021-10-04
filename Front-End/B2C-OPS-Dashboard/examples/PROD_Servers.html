@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+  <meta name="author" content="Creative Tim">
+  <title>SERVERS</title>
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/img/brand/favicon.png" type="image/png">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <!-- Icons -->
+  <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
+  <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+  <!-- Argon CSS -->
+  <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
+</head>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index%20.html">HOME</a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Prod_DB.html">PROD DB</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PROD_Consoles.html">PROD CONSOLES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="PROD_Monitors.html">PROD MONITORING</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="DR_Consoles.html">DR CONSOLES</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<body>
+  
+  
+    <!-- Header -->
+    <!-- Header -->
+    <div class="header bg-primary pb-6">
+      <div class="container-fluid">
+        <div class="header-body">
+          <div class="row align-items-center py-4">
+            <div class="col-lg-6 col-7">
+              <h6 class="h2 text-white d-inline-block mb-0">PROD SERVERS</h6>
+              <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                
+              </nav>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page content -->
+    <div class="container-fluid mt--6">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <!-- Card header -->
+            <div class="card-header border-0">
+              <h3 class="mb-0">PROD</h3>
+            </div>
+            <!-- Light table -->
+            <div class="table-responsive">
+              <table class="table align-items-center table-flush">
+                <thead class="thead-light">
+                  <tr>
+                    <th scope="col" class="sort" data-sort="name">S.No.</th>
+                    <th scope="col" class="sort" data-sort="name">ENV</th>
+                    <th scope="col" class="sort" data-sort="budget">COMPONENT</th>
+                    <th scope="col" class="sort" data-sort="status">DNS NAME</th>
+                    <th scope="col" class="sort" data-sort="status">IP</th>
+                    <th scope="col" class="sort" data-sort="status">LB</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+      <th scope="row">1</th>
+      <td>AUTH</td>
+      <td>JENKINS</td>
+      <td>etr-prd-jenkins-master.corp.hpicloud.net</td>
+      <td>172.22.18.118</td>
+      <td>N/A</td>
+      
+    </tr>
+   <tr>
+      <th scope="row">2</th>
+      <td>AUTH</td>
+      <td>WCS Master</td>
+      <td>etr-prd-auth-wcs-master.corp.hpicloud.net</td>
+      <td>172.22.18.68</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>AUTH</td>
+      <td>CTO APP 1</td>
+      <td>etr-prd-auth-cto-app1.corp.hpicloud.net</td>
+      <td>172.22.18.180</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>AUTH</td>
+      <td>CTO APP 2</td>
+      <td>etr-prd-auth-cto-app2.corp.hpicloud.net</td>
+      <td>172.22.19.89</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>AUTH</td>
+      <td>CTO WEB 1</td>
+      <td>etr-prd-auth-cto-web1.corp.hpicloud.net</td>
+      <td>172.22.18.172</td>
+      <td>etr-prd-auth-cto-weblb.corp.hpicloud.net</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>AUTH</td>
+      <td>CTO WEB 2</td>
+      <td>etr-prd-auth-cto-web2.corp.hpicloud.net</td>
+      <td>172.22.19.157</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>AUTH</td>
+      <td>VIM APP 1</td>
+      <td>etr-prd-auth-vim-app1.corp.hpicloud.net</td>
+      <td>172.22.18.11</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>AUTH</td>
+      <td>VIM APP 2</td>
+      <td>etr-prd-auth-vim-app2.corp.hpicloud.net</td>
+      <td>172.22.19.21</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>AUTH</td>
+      <td>VIM WEB 1</td>
+      <td>etr-prd-auth-vim-web1.corp.hpicloud.net</td>
+      <td>172.22.18.39</td>
+      <td>etr-prd-auth-vim-lb.corp.hpicloud.net</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>AUTH</td>
+      <td>VIM WEB 2</td>
+      <td>etr-prd-auth-vim-web2.corp.hpicloud.net</td>
+      <td>172.22.19.125</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>LIVE</td>
+      <td>WCS MASTER</td>
+      <td>etr-prd-live-wcs-master.corp.hpicloud.net</td>
+      <td>172.22.24.93</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>LIVE</td>
+      <td>CTO APP 1</td>
+      <td>etr-prd-live-cto-app1.corp.hpicloud.net</td>
+      <td>172.22.18.230</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>LIVE</td>
+      <td>CTO APP 2</td>
+      <td>etr-prd-live-cto-app2.corp.hpicloud.net</td>
+      <td>172.22.19.35</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>LIVE</td>
+      <td>CTO WEB 1</td>
+      <td>etr-prd-live-cto-web1.corp.hpicloud.net</td>
+      <td>172.22.18.18</td>
+      <td>etr-prd-live-cto-weblb.corp.hpicloud.net</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>LIVE</td>
+      <td>CTO WEB 2</td>
+      <td>etr-prd-live-cto-web2.corp.hpicloud.net</td>
+      <td>172.22.19.183</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>LIVE</td>
+      <td>OMS APP 1</td>
+      <td>g8t00397s.inc.hpicorp.net</td>
+      <td>15.60.5.16</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>LIVE</td>
+      <td>OMS APP 2</td>
+      <td>g8t00398s.inc.hpicorp.net</td>
+      <td>15.60.5.17</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>LIVE</td>
+      <td>OMS APP 3</td>
+      <td>g8t00399s.inc.hpicorp.net</td>
+      <td>15.60.5.18</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">18</th>
+      <td>LIVE</td>
+      <td>OMS APP 4</td>
+      <td>g8t00400s.inc.hpicorp.net</td>
+      <td>15.60.5.19</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">19</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 1</td>
+      <td>g8t00393s.inc.hpicorp.net</td>
+      <td>15.60.4.251</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">20</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 2</td>
+      <td>g8t00394s.inc.hpicorp.net</td>
+      <td>15.60.4.252</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">21</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 3</td>
+      <td>g8t00395s.inc.hpicorp.net</td>
+      <td>15.60.4.253</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">22</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 4</td>
+      <td>g8t00396s.inc.hpicorp.net</td>
+      <td>15.60.4.254</td>
+
+      <td>N/A</td>
+      </tr>
+    <tr>
+      <th scope="row">23</th>
+      <td>LIVE</td>
+      <td>OMS WEB 1</td>
+      <td>g8t00427g.inc.hpicorp.net</td>
+      <td>15.60.4.213</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">24</th>
+      <td>LIVE</td>
+      <td>OMS WEB 2</td>
+      <td>g8t00428g.inc.hpicorp.net</td>
+      <td>15.60.4.214</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">25</th>
+      <td>LIVE</td>
+      <td>OMS WEB 3</td>
+      <td>g8t00429g.inc.hpicorp.net</td>
+      <td>15.60.4.215</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">26</th>
+      <td>LIVE</td>
+      <td>OMS WEB 4</td>
+      <td>g8t00430g.inc.hpicorp.net</td>
+      <td>15.60.4.216</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">27</th>
+      <td>VAULT</td>
+      <td>VAULT 1</td>
+      <td>N/A</td>
+      <td>172.22.18.168</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">28</th>
+      <td>VAULT</td>
+      <td>VAULT 2</td>
+      <td>N/A</td>
+      <td>172.22.18.51</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">29</th>
+      <td>VAULT</td>
+      <td>VAULT 3</td>
+      <td>N/A</td>
+      <td>172.22.19.17</td>
+      <td>N/A</td>
+    </tr>
+
+                </tbody>
+              </table>
+            </div>
+            <!-- Card footer -->
+            <div class="card-footer py-4">
+              <nav aria-label="...">
+                
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!--PROD DB COMPLETED-->
+
+ 
+     <!--DR DB STARTED-->
+      <!-- Dark table -->
+      <div class="row">
+        <div class="col">
+          <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+              <h3 class="text-white mb-0">DR </h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table align-items-center table-dark table-flush">
+                <thead>
+    <tr>
+      <th scope="col">SI.No</th>
+      <th scope="col">AUTH / LIVE</th>
+      <th scope="col">COMPONENT</th>
+      <th scope="col">DNS Name</th>
+      <th scope="col">IP</th>
+      <th scope="col">LB</th>
+    </tr>
+  </thead>
+  <tbody>
+  
+  <tr>
+      <th scope="row">1</th>
+      <td>AUTH</td>
+      <td>JENKINS</td>
+      <td><a href="url">http://172.23.129.75:8080/jenkins/login</a></td>
+      <td>172.23.129.75</td>
+      <td>N/A</td>
+    </tr>
+    
+   <tr>
+      <th scope="row">2</th>
+      <td>AUTH</td>
+      <td>WCS Master</td>
+      <td>etr-prd-dr-auth-wcs-master.corp.hpicloud.net</td>
+      <td>172.23.129.93</td>
+      <td>a7a091c4ee46442dd908632f433a014f-0a536dc27d34ae87.elb.us-west-2.amazonaws.com</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">3</th>
+      <td>AUTH</td>
+      <td>CTO APP</td>
+      <td>etr-prd-dr-auth-cto-app1.corp.hpicloud.net</td>
+      <td>1172.23.128.105</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">4</th>
+      <td>AUTH</td>
+      <td>CTO WEB</td>
+      <td>etr-prd-dr-auth-cto-web1.corp.hpicloud.net</td>
+      <td>172.23.129.238</td>
+      <td>etr-prd-dr-auth-cto-weblb.corp.hpicloud.net</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">5</th>
+      <td>AUTH</td>
+      <td>VIM APP</td>
+      <td>etr-prd-dr-auth-vim-app1.corp.hpicloud.net</td>
+      <td>172.23.129.32</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">6</th>
+      <td>AUTH</td>
+      <td>VIM WEB</td>
+      <td>etr-prd-dr-auth-vim-web1.corp.hpicloud.net</td>
+      <td>172.23.128.164</td>
+      <td>etr-prd-dr-auth-vim-weblb.corp.hpicloud.net</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">7</th>
+      <td>LIVE</td>
+      <td>WCS MASTER</td>
+      <td>etr-prd-dr-live-wcs-master.corp.hpicloud.net</td>
+      <td>172.23.128.224</td>
+      <td>acca7232ad6be44d8b6830909af045ca-d4492f446ab61f45.elb.us-west-2.amazonaws.com</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">8</th>
+      <td>LIVE</td>
+      <td>CTO APP</td>
+      <td>etr-prd-dr-live-cto-app1.corp.hpicloud.net</td>
+      <td>172.23.129.0</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">9</th>
+      <td>LIVE</td>
+      <td>CTO WEB</td>
+      <td>etr-prd-dr-live-cto-web1.corp.hpicloud.net</td>
+      <td>172.23.129.68</td>
+      <td>etr-prd-dr-live-cto-extlb.hpcloud.hp.com</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">10</th>
+      <td>LIVE</td>
+      <td>OMS APP 1</td>
+      <td>g7t01016s.inc.hpicorp.net</td>
+      <td>15.62.7.16</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">11</th>
+      <td>LIVE</td>
+      <td>OMS APP 2</td>
+      <td>g7t01017s.inc.hpicorp.net</td>
+      <td>15.62.7.17</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">12</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 1</td>
+      <td>g7t01014s.inc.hpicorp.net</td>
+      <td>15.62.6.253</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>LIVE</td>
+      <td>OMS AGENT 2</td>
+      <td>g7t01015s.inc.hpicorp.net</td>
+      <td>15.62.6.254</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">14</th>
+      <td>LIVE</td>
+      <td>OMS WEB 1</td>
+      <td>g7t01030g.inc.hpicorp.net</td>
+      <td>15.62.6.242</td>
+      <td>N/A</td>
+    </tr>
+    
+    <tr>
+      <th scope="row">15</th>
+      <td>LIVE</td>
+      <td>OMS WEB 2</td>
+      <td>g7t01031g.inc.hpicorp.net</td>
+      <td>15.62.6.243</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+              </table>
+
+        </div>
+         <!-- Card footer -->
+            <div class="card-footer py-4 bg-default shadow">
+              <nav aria-label="...">
+                
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+     <!--DR DB COMPLETED-->
+     
+      
+
+  <!--DEV1 DB COMPLETED-->
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/js-cookie/js.cookie.js"></script>
+  <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+  <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+  <!-- Argon JS -->
+  <script src="../assets/js/argon.js?v=1.2.0"></script>
+</body>
+
+</html>
