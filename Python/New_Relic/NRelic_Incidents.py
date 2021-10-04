@@ -10,7 +10,7 @@ if os.path.exists(r"D:\Users\ksi\Desktop\siva\Scripts\New_Relic\NRelic_Inc.csv")
 else:
     print("The file does not exist.. Proceeding Further")
 
-api_token = 'NRAK-25ASG88WY8WEC5VCTPVGMFJQ2HR'
+api_token = input("Enter the API Token") #for security purpose 
 headers={'x-api-key':api_token}
 url = 'https://api.newrelic.com/v2/alerts_incidents.json'
 parameters = "only_open=true"
