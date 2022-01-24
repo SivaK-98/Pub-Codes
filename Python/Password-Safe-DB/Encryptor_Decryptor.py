@@ -2,7 +2,7 @@ from cryptography.fernet import Fernet, MultiFernet
 import sqlite3
 from sqlite3 import Error
 
-sqliteConnection = sqlite3.connect(r"D:\Users\ksi\\AppData\Roaming\DBeaverData\workspace6\.metadata\sample-database-sqlite-1\Chinook.db")
+sqliteConnection = sqlite3.connect("/home/siva/Documents/Siva/Code/python/Tkinter-App/vault.db")
 cursor = sqliteConnection.cursor()
 print("Connected to SQLite")
 
@@ -67,7 +67,11 @@ def fetch_entry():
         db_fetch_name = cursor.execute(f"select * from DB_CRED where DBNAME = '{dbname}' ;").fetchone()[1]
         print("Match Found...")
         my_password = cursor.execute(f"select PASSWORD from DB_CRED where DBNAME = '{dbname}';").fetchone()[0]
+        print(my_password)
+        print(type(my_password))
         password = my_password.encode()
+        print(type(password))
+        print(password)
         key = cursor.execute(f" select KEY from DB_CRED where DBNAME = '{dbname}';").fetchone()[0]
         f = Fernet(key)
         decMessage = f.decrypt(password).decode()
