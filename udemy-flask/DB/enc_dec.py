@@ -10,7 +10,7 @@ def encrypt(name,email,password):
     f = Fernet(key)
     encrypted = f.encrypt(password.encode()).decode()
     print(encrypted)
-    result = mongo_db.upsert(name,email,encrypted,key)
+    result = mongo_db.create_tenant(name,email,encrypted,key)
     return result
 
 def decrypt(password,key):
