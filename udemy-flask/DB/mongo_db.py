@@ -36,11 +36,18 @@ def validate(email,password):
     data = {}
     data["email"] = email
     password = password
-    key = "dummy"
-    #table.find_one(data)
-    result = enc_dec.decrypt(password,key)
-    return result
-
-
+    query = {"email":email}
+    try:
+        response = table.find_one(query)
+        print(response)
+        key = response["key"].decode()
+        saved_pass = response["password"]
+        result = enc_dec.decrypt(saved_pass,key)
+        if result == password:
+            return "Login Success"
+        else:
+            return "Password seems incorrect"
+    except TypeError as error:
+        return "Invalid Email"
 # Completed till avoiding duplicate entries.
 # Need to create login feature.

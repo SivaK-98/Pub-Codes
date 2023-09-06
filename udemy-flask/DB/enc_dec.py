@@ -16,4 +16,7 @@ def encrypt(name,email,password):
 def decrypt(password,key):
     password = password
     key = key
-    return "login success"
+    f = Fernet(key)
+    decrypted_pass = f.decrypt(password)
+    decrypted_pass = decrypted_pass.decode()
+    return decrypted_pass
