@@ -1,6 +1,7 @@
-from flask import Flask,jsonify,request
+from flask import Flask,jsonify,request,render_template
 from DB import mongo_db
 from DB import enc_dec
+import pandas as pd
 
 app = Flask(__name__)
 
@@ -32,8 +33,29 @@ def validate_login():
     data["email"] = email = request.form["email"]
     data["password"] = passowrd = request.form["password"]
     result = mongo_db.validate(email,passowrd)
-    return result
-
+    tenantid = result
+    
+    content = mongo_db.get_table(tenantid)
+    #print(type(content))
+    #print("content",content)
+    #print(len(content))
+    for value in content:
+        
+        finalresult = []
+        for items in value:
+            result_list = []
+            #print("value",value)
+            my_data = value["_id"]
+            #print("mydata",my_data)
+            result_list.append(my_data["appname"])
+            result_list.append(my_data["username"])
+            result_list.append(my_data["password"])
+            #print(result_list)
+        finalresult.append(result_list)
+        print(finalresult)
+    dataframe = pd.DataFrame(finalresult,columns=["appnamme","username","password"])
+    print(dataframe)
+    return content
 
 
 @app.route("/validate_signup",methods=["POST","GET"])
@@ -44,6 +66,10 @@ def validate_signup():
     data["password"] = password =  request.form["password"]
     result = enc_dec.encrypt(name,email,password)
     return result
+
+
+
+
 
 
 

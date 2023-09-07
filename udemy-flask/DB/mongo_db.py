@@ -39,15 +39,27 @@ def validate(email,password):
     query = {"email":email}
     try:
         response = table.find_one(query)
-        print(response)
+        #print(response)
         key = response["key"].decode()
         saved_pass = response["password"]
+        tenant_id = response["tenantid"]
         result = enc_dec.decrypt(saved_pass,key)
         if result == password:
-            return "Login Success"
+            return tenant_id
         else:
             return "Password seems incorrect"
     except TypeError as error:
         return "Invalid Email"
-# Completed till avoiding duplicate entries.
-# Need to create login feature.
+
+
+def get_table(tenantid):
+    tenant = str(tenantid)
+    db_3 = client[tenant]
+    table = db_3["creds"]
+    content = []
+    records = table.find({})
+    for value in records:
+        content.append(value)
+    #print(content)
+    return content
+    
