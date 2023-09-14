@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+</head>
+<body>
+<form method="POST">
+<input class="input" name="city" type="text" placeholder="City Name">
+<button class="button is-info">Check Weather</button>
+    </form>
+
+<div class="container-fluid">
+ <figure class="image is-50x50"><img src="{{ weather.icon }}" alt="Image"></figure>
+<span class="title">{{ weather.city }}</span>
+<span class="subtitle">{{ weather.temp_c }}° C</span>
+<br> {{ weather.message }}
+</div>
+
+
+</body>
+</html>
